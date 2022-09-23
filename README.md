@@ -5,6 +5,10 @@ Docker containers are not meant to be peristant, like a PC OS. They are meant to
 
 In any Docker command, if you want to specify a particular container, you can just provide the first 5 characters of the container ID (as long as they are different from other containers) rather than the entire ID - i.e. a043d rather than a043d945kdfksko59er99043434kifkf49040.
 
+Official Docker images: https://hub.docker.com/search?q=&type=image&image_filter=official
+
+Images can be base operating systems, like Ubuntu, or they can operate as webservers (NGINX), or provide other functions like data structure servers or programming languages (Python, node, etc). Commond images include ubuntu, alpine, redis, nginx, centos, mongo.
+
 ## Basic Docker Commands
 
 docker run <IMAGE_NAME> - starts and runs a docker instance of the specified image
