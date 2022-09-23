@@ -7,7 +7,7 @@ In any Docker command, if you want to specify a particular container, you can ju
 
 ## Basic Docker Commands
 
-docker run nginx - starts and runs a docker instance of the NGINX image
+docker run <IMAGE_NAME> - starts and runs a docker instance of the specified image
 
 docker ps - lists all running containers, use the -a option to see all containers regardless of whether they are running or not
 
