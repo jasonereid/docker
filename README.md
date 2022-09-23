@@ -27,3 +27,6 @@ docker exec <CONTAINER_NAME> <COMMAND> - executes a command on a running contain
     
         docker exec my_ubuntu_01 tail /home/file.txt
 
+docker run -it <IMAGE_NAME> bash - runs a container and gives you TTY, so you can operate bash inside the container.
+    
+    
