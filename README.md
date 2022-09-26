@@ -31,4 +31,4 @@ docker run -it <IMAGE_NAME> bash - runs a container and gives you TTY, so you ca
     
 docker version - displays Docker engine version running on host
     
-
+docker images are stored in the /var/lib/docker/ folder
