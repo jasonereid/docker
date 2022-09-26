@@ -34,3 +34,20 @@ docker run -it <IMAGE_NAME> bash - runs a container and gives you TTY, so you ca
 docker version - displays Docker engine version running on host
     
 docker images are stored in the /var/lib/docker/ folder
+    
+# Dockerfiles
+    
+Dockerfiles are built from a set of instructions telling the host how and where to install the files, what applications to run, and what ports to map. It follows a simple setup:
+    
+    FROM - this sets the image to base the container on
+    RUN - 
+    COPY
+    EXPOSE
+    WORKDIR
+    ENTRYPOINT
+    
+    
+To build an image from a Dockerfile, simply run a command on the directory containing the Dockerfile:
+    
+    docker build <DIRECTORY_DOCKERFILE>
+    
