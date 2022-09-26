@@ -9,6 +9,8 @@ Official Docker images: https://hub.docker.com/search?q=&type=image&image_filter
 
 Images can be base operating systems, like Ubuntu, or they can operate as webservers (NGINX), or provide other functions like data structure servers or programming languages (Python, node, etc). Commond images include ubuntu, alpine, redis, nginx, centos, mongo.
 
+Docker images are downloaded to the working directory. 
+
 ## Basic Docker Commands
 
 docker run <IMAGE_NAME> - starts and runs a docker instance of the specified image
