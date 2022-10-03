@@ -19,7 +19,7 @@ Basic command format:
         
         docker run -d --name mynew-sql-db -e MYSQL_ROOT_PASSWORD=password123! -p 3306:500 mysql
 
-docker run creates and runs a container with the image and options your specify. If the iamge is not located locally, docker will automatically pull down the image from the dockerhub or your specified repo. 
+Docker run creates and runs a container with the image and options your specify. If the iamge is not located locally, docker will automatically pull down the image from the dockerhub or your specified repo. 
 
 Options for the docker run command:
 
