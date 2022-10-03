@@ -11,9 +11,38 @@ Images can be base operating systems, like Ubuntu, or they can operate as webser
 
 Docker images are downloaded to the working directory. 
 
-## Basic Docker Commands
+## The Docker Run Command
 
-docker run <IMAGE_NAME> - starts and runs a docker instance of the specified image
+Basic command format:
+
+        docker run <OPTIONS> <IMAGE_NAME>
+        
+        docker run -d --name mynew-sql-db -e MYSQL_ROOT_PASSWORD=password123! -p 3306:500 mysql
+
+docker run creates and runs a container with the image and options your specify. If the iamge is not located locally, docker will automatically pull down the image from the dockerhub or your specified repo. 
+
+Options for the docker run command:
+
+--name - this allows you to name the container
+
+-d - this makes the container run detached in the background. You can attach to it later to run commands on it.
+
+-e - this allows you to run environmental variables. You need to specify a password for databases, pass along variables for web apps, etc.
+
+-i - makes the container interactive so you can run commands
+
+-t - opens up a terminal on the container - combine this with i to make -ti and you can directly run commands after the container starts
+
+--network - specify the network / subnet to attach the container to
+
+-v - allows you to bind a volume to your container so you can use an external (persistent) volume rather than a volume inside the container that will die with the container
+
+-p - allows you to define and bind ports -p 5000:8081 binds external (host machine) port 5000 to container port 8081
+
+
+
+
+## Other Docker Commands
 
 docker ps - lists all running containers, use the -a option to see all containers regardless of whether they are running or not
 
